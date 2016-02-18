@@ -1,0 +1,62 @@
+[1mdiff --git a/.gitmodules b/.gitmodules[m
+[1mindex 90169f9..a6b59fc 100644[m
+[1m--- a/.gitmodules[m
+[1m+++ b/.gitmodules[m
+[36m@@ -1,10 +1,10 @@[m
+ [submodule "bundle/sensible"][m
+ 	path = bundle/sensible[m
+ 	url = http://github.com/tpope/vim-sensible.git[m
+[31m-[m
+ [submodule "bundle/fugitive"][m
+ 	path = bundle/fugitive[m
+ 	url = http://github.com/tpope/vim-fugitive.git[m
+ [submodule "bundle/rails"][m
+ 	path = bundle/rails[m
+ 	url = https://github.com/tpope/vim-rails.git[m
+[41m+[m
+[1mdiff --git a/README b/README[m
+[1mindex 1296b1a..88b912c 100644[m
+[1m--- a/README[m
+[1m+++ b/README[m
+[36m@@ -4,8 +4,13 @@[m [mInstallation:[m
+ [m
+ Create symlinks:[m
+ [m
+[31m-	ln -s ~/dotfiles/vimrc ~/.vimrc[m
+[31m-	ln -s ~/dotfiles/gvimrc ~/.gvimrc[m
+[32m+[m	[32mln -s ~/.vim/vimrc ~/.vimrc[m
+[32m+[m	[32mln -s ~/.vim/gvimrc ~/.gvimrc[m
+[32m+[m
+[32m+[m[32mTo add a new plugin from github, add a new submodule:[m
+[32m+[m
+[32m+[m	[32mcd ~/.vim[m
+[32m+[m	[32mgit submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive[m
+ [m
+ Switch to the '~/.vim' directory and fetch submodules:[m
+ [m
+[36m@@ -13,7 +18,11 @@[m [mSwitch to the '~/.vim' directory and fetch submodules:[m
+ 	git submodule init[m
+ 	git submodule update[m
+ [m
+[31m-To add a new plugin from github, add a new submodule:[m
+[32m+[m[32mUpgrading a plugin bundle[m
+ [m
+[31m-	cd ~/.vim[m
+[31m-	git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive[m
+[32m+[m	[32mcd ~/.vim/bundle/fugitive[m
+[32m+[m	[32mgit pull origin master[m
+[32m+[m
+[32m+[m[32mUpgrading all bundled plugins[m
+[32m+[m
+[32m+[m	[32mgit submodule foreach git pull origin master[m
+[1mdiff --git a/vimrc b/vimrc[m
+[1mindex b29d781..10205f4 100644[m
+[1m--- a/vimrc[m
+[1m+++ b/vimrc[m
+[36m@@ -1,3 +1,5 @@[m
+[31m-execute pathogen#infect()[m
+[32m+[m[32mcall pathogen#infect()[m
+[32m+[m[32mcall pathogen#helptags()[m
+[32m+[m
+ syntax on[m
+ filetype plugin indent on[m
