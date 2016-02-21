@@ -5,4 +5,4 @@ syntax on
 filetype plugin indent on
 
 source ~/.vim/maps
-source ~/.vim/ui
+source ~/.vim/colors

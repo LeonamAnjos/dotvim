@@ -1,12 +1,12 @@
-"vim:syntax=vim
+"vm:syntax=vim
 
 set backspace=indent,eol,start
 
 " To screw myself up
-nmap <up> <nop>
-nmap <down> <nop>
-nmap <left> <nop>
-nmap <right> <nop>
+"nmap <up> <nop>
+"nmap <down> <nop>
+"nmap <left> <nop>
+"nmap <right> <nop>
 
 map <C-j> 10j
 map <C-k> 10k

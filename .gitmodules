@@ -17,3 +17,9 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/ruby-refactoring"]
+	path = bundle/ruby-refactoring
+	url = https://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "bundle/railscasts-theme"]
+	path = bundle/railscasts-theme
+	url = https://github.com/jpo/vim-railscasts-theme.git
