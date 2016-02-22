@@ -25,7 +25,7 @@ imap <c-l> <space>=><space>
 "nnoremap k gk
 
 " nerdTree
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> <plug>NERDTreeTabsToggle<CR>
 map <C-h> :NERDTreeFind<CR>
 
 " Relative number
