@@ -38,6 +38,11 @@ map <Tab> <C-W>w
 "map ,r :w\|:!ruby %<cr>
 map ,r :w\|:!clear;rake test:units TEST=% TESTOPTS=-v<cr>
 
+" Rspec.vim mappings
+map ,rc :call RunCurrentSpecFile()<CR>
+map ,rn :call RunNearestSpec()<CR>
+map ,rl :call RunLastSpec()<CR>
+
 "To add comments
 map ,c :Commentary<CR>
 map ,w :w<CR>
