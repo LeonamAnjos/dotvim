@@ -1,6 +1,8 @@
 "vm:syntax=vim
 
+let mapleader = ","
 set backspace=indent,eol,start
+
 
 " To screw myself up
 "nmap <up> <nop>
@@ -12,7 +14,7 @@ map <C-j> 10j
 map <C-k> 10k
 
 nmap <CR> :nohlsearch<CR>
-nmap ,, :nohlsearch<CR>
+nmap <leader><leader> :nohlsearch<CR>
 
 " paste replacing current word"
 nmap <silent> cp "_cw<C-R>"<Esc>
@@ -36,22 +38,22 @@ map <Tab> <C-W>w
 
 "To run ruby test
 "map ,r :w\|:!ruby %<cr>
-map ,r :w\|:!clear;rake test:units TEST=% TESTOPTS=-v<cr>
+map <leader>r :w\|:!clear;rake test:units TEST=% TESTOPTS=-v<cr>
 
 " Rspec.vim mappings
-map ,rc :call RunCurrentSpecFile()<CR>
-map ,rn :call RunNearestSpec()<CR>
-map ,rl :call RunLastSpec()<CR>
+map <leader>rc :call RunCurrentSpecFile()<CR>
+map <leader>rn :call RunNearestSpec()<CR>
+map <leader>rl :call RunLastSpec()<CR>
 
 "To add comments
-map ,c :Commentary<CR>
-map ,w :w<CR>
+map <leader>c :Commentary<CR>
+map <leader>w :w<CR>
 
 "to show whitespace
-map ,t /\s\+$<CR>
+map <leader>t /\s\+$<CR>
 
 "to replace line with yank
 map D "_ddkp"
 
 "to close buffer
-map ,q :bd<cr>
+map <leader>q :bd<cr>
