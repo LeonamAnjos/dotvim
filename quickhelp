@@ -1,0 +1,63 @@
+# Vim Quick View
+
+## Normal Mode
+
+hjkl -> arrows left, down, top and right
+
+x -> delete char
+i -> insert from cursor
+I -> insert from line begining
+o -> insert from next line
+O -> insert from preveous line
+a -> append at the cursor
+A -> append at the end of the line
+dw -> delete word
+dd -> delete sentence
+d$ -> delete to the end of the line
+de -> delete to the end od the word
+c [operator] -> same as d, but finish in insert mode
+u -> undo
+U -> undo whole line
+CTRL+R -> redo
+w -> goes to the next word start
+e -> goes to the next word end
+0 -> goes to the start of the line 
+$ -> goes to the end of the line
+p -> copy last deleted line (d [command]) to the next line
+r -> replace the char over the cursor
+R -> replace mode
+ce -> delete eht word from the cursor and star insert mode
+G -> goes to the end of the file
+number g -> goes to the line number
+gg -> goes to the begining of the file
+CTRL+g -> shows file name and the line of the cursor
+% -> over a {, ( or [, finds the matching
+v -> virtualy selects lines
+v :w FILE_NAME -> writes the virtualy selected lines in FILE_NAME file
+:r FILE_NAME -> appens the content of FILE_NAME from the cursor
+:r !COMMAND -> appens the command result from the cursor
+
+/ + word -> search for the word
+n -> search again
+N -> search again backward
+? + word -> search for the word backwardly
+
+CTRL+o -> goes back where you were
+CTRL+i -> goes backward where you were
+
+:set ic -> ignore case when search with /
+:set hls is -> highliht the search word
+:nohlsearch -> removes highliht
+
+:s/old/new -> substitute the old word for the new
+:s/old/new/g -> substitute the old word for the new in entire line
+:#,#s/old/new/g -> substitute the old word for the new in the #,# lines range
+:%s/old/new/g -> substitute the old word for the new in entire document
+:%s/old/new/gc -> substitute the old word for the new in entire document asking before
+
+:! [shell command] -> execute any shell command
+
+q -> quit
+:q! -> quit without save
+:w -> save
+:wq -> save and exit
