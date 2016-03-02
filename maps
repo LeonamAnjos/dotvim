@@ -3,7 +3,6 @@
 let mapleader = ","
 set backspace=indent,eol,start
 
-
 " To screw myself up
 "nmap <up> <nop>
 "nmap <down> <nop>

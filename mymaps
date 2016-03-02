@@ -1,0 +1,12 @@
+let mapleader = ","
+
+" Tab navigation
+nmap <C-tab>	<C-W>w
+imap <C-tab>	<Esc><C-W>wi
+
+" Edit commands
+nmap <c-s>	:w<CR>
+imap <c-s>	<Esc>:w<CR>i
+
+" New file command
+nmap <c-n>	:e %:p:h/
