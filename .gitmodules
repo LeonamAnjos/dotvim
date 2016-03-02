@@ -53,3 +53,12 @@
 [submodule "bundle/dockerfile"]
 	path = bundle/dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "bundle/airline-themes"]
+	path = bundle/airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
