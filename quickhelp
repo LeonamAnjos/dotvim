@@ -23,10 +23,10 @@ w -> goes to the next word start
 e -> goes to the next word end
 0 -> goes to the start of the line 
 $ -> goes to the end of the line
-p -> copy last deleted line (d [command]) to the next line
+p -> paste last deleted line (d [command]) to the next line
 r -> replace the char over the cursor
 R -> replace mode
-ce -> delete eht word from the cursor and star insert mode
+ce -> delete the word from the cursor and set insert mode
 G -> goes to the end of the file
 number g -> goes to the line number
 gg -> goes to the begining of the file
